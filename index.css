@@ -1,0 +1,301 @@
+/* ---- DEFINING MAIN FUNCTIONS ---- */
+body {
+	overflow: hidden;
+}
+.slide {
+	width: 1000px;
+	height: 600px;
+  
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-left: -500px;
+	margin-top: -300px;
+	opacity: 0;
+}
+svg {
+	width: 1000px;
+	height: 600px;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.background {
+	width: calc(100vw);
+	height: calc(100vh);
+	position: absolute;
+	top: 0;
+	left: 0;
+	opacity: 0;
+}
+a {
+	color: #73B2AA;
+	text-decoration: none;
+}
+p {
+	font-family: 'Lato', sans-serif;
+	color: #B7B0AD;
+	font-weight: 800;
+}
+
+
+/* ----- SLIDE STYLING ----- */
+
+/* ----- SLIDE 1 ----- */
+.slide1 {
+	background-color: rgba(255,255,255,1);
+	opacity: 1;
+}
+.title1 {
+	font-family: 'Open Sans Condensed', sans-serif;
+	text-align: center;
+	font-size: 60px;
+	margin-top: 184px;
+	color: #B7B0AD;
+	animation-name: presentTitle;
+	animation-duration: 6s;
+}
+@keyframes presentTitle {
+	0% {color: black;}
+	80% {color: black;}
+	100% {color: #B7B0AD;}
+}
+.box1 {
+	stroke: #B7B0AD;
+	stroke-width: 2px;
+	width: 400px;
+	height: 150px;
+	fill: rgba(255,255,255,0);
+	stroke-dasharray: 1100px;
+	animation-name: presentBox1;
+	animation-duration: 6s;
+}
+@keyframes presentBox1 {
+	0% {stroke-dashoffset: 1100; stroke: black;}
+	20% {stroke-dashoffset: 1100; stroke: black;}
+	80% {stroke-dashoffset: 0; stroke: black;}
+	100% {stroke: #B7B0AD;}
+}
+.subtitle1 {
+	font-family: 'Lato', sans-serif;
+	color: #B7B0AD;
+	opacity: .7;
+	text-align: center;
+	margin-top: 120px;
+	animation-name: presentSubtitle1;
+	animation-duration: 6s;
+}
+@keyframes presentSubtitle1 {
+	0% {opacity: 0;}
+	80% {opacity: 0;}
+	100% {opacity: .7;}
+}
+.subtitle1-2 {
+	font-family: 'Lato', sans-serif;
+	color: #B7B0AD;
+	opacity: 0;
+	text-align: center;
+	margin-top: 60px;
+	animation-name: presentSubtitle1-2;
+	animation-duration: 1s;
+	animation-delay: 6s;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+}
+@keyframes presentSubtitle1-2 {
+	0% {opacity: 0;}
+	100% {opacity: .6;}
+}
+.background1 {
+	background: blue;
+	background: -o-linear-gradient(45deg, #D7FFFA, #FFE3D7);
+	background: -moz-linear-gradient(45deg, #D7FFFA, #FFE3D7);
+	background: -webkit-linear-gradient(45deg, #D7FFFA, #FFE3D7);
+	background: linear-gradient(65deg, #D7FFFA, #FFE3D7);
+	opacity: 1;
+	animation-name: presentBackground1;
+	animation-duration: 6s;
+}
+@keyframes presentBackground1 {
+	0% {opacity: 0;}
+	83% {opacity: 0;}
+	100% {opacity: 1;}
+}
+
+
+
+/* ----- SLIDE 2 ----- */
+.slide2 {
+	background-color: rgba(255,255,255,1);
+}
+.title2{
+	font-family: 'Open Sans Condensed', sans-serif;
+	text-align: center;
+	font-size: 50px;
+	color: #B7B0AD;
+}
+.body2 {
+	font-family: 'Lato', sans-serif;
+	color: #B7B0AD;
+	padding: 100px;
+	margin-top: -50px;
+	line-height: 25px;
+}
+.list2 {
+	list-style-type: none;
+	color: #B7B0AD;
+	font-family: 'Lato', sans-serif;
+	line-height: 40px;
+	margin-left: 100px;
+	margin-top: -100px;
+}
+.liResponsive:hover {
+	color: #73B2AA;
+	font-size: 20px;
+}
+.liAnimated {
+	animation-name: liAnimatedAnimation;
+	animation-duration: 3s;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+	animation-timing-function: linear;
+}
+@keyframes liAnimatedAnimation {
+	0% {color: #B7B0AD; font-size: 15px;}
+	100% {color: #73B2AA; font-size: 20px;}
+}
+.liStylized {
+	font-family: 'Barrio', cursive;
+	line-height: 50px;
+	font-size: 20px;
+	color: #73B2AA
+}
+.liEditable {
+	
+}
+.background2{
+	background-color: #FFE3D7;
+}
+
+
+
+/* ----- SLIDE 3 ----- */
+.slide3 {
+	background-color: rgba(255,255,255,1);
+}
+.title3 {
+	font-family: 'Open Sans Condensed', sans-serif;
+	text-align: center;
+	font-size: 50px;
+	color: #B7B0AD;
+	margin-top: 50px;
+}
+.body3 {
+	font-family: 'Lato', sans-serif;
+	color: #B7B0AD;
+	padding: 100px;
+	line-height: 35px;
+	margin-top: -30px;
+}
+.background3{
+	background-color: #D7FFFA;
+}
+
+
+
+
+/* ----- SLIDE 4 ----- */
+.slide4 {
+	background-color: rgba(255,255,255,1);
+}
+.title4 {
+	font-family: 'Open Sans Condensed', sans-serif;
+	text-align: center;
+	font-size: 50px;
+	color: #B7B0AD;
+	margin-top: 50px;
+}
+.body4 {
+	font-family: 'Lato', sans-serif;
+	color: #B7B0AD;
+	padding: 100px;
+	line-height: 35px;
+	margin-top: -60px;
+	text-align: center;
+}
+.display4 {
+	width: 600px;
+	height: 300px;
+	position: absolute;
+	top: 270px;
+	left: 200px;
+	background-color: white;
+}
+.display4:hover {
+	border: 1px solid #73B2AA;
+	margin: -1px;
+}
+.display4Body {
+	line-height: 20px;
+	color: #B7B0AD;
+	font-family: 'Lato', sans-serif;
+	text-align: center;
+}
+.image4 {
+	height: 245px;
+	width: 450px;
+	margin-left: 75px;
+}
+.background4 {
+	background: blue;
+	background: -o-linear-gradient(45deg, #FFE3D7, #D7FFFA);
+	background: -moz-linear-gradient(45deg, #FFE3D7, #D7FFFA);
+	background: -webkit-linear-gradient(45deg, #FFE3D7, #D7FFFA);
+	background: linear-gradient(65deg, #FFE3D7, #D7FFFA);
+}
+
+
+
+/* ----- SLIDE CHANGE ANIMTIONS ----- */
+.enterSlide {
+	animation-name: enterSlide;
+	animation-duration: 2s;
+	opacity: 1;
+	margin-left: -500px;
+}
+@keyframes enterSlide {
+	0% {opacity: 0; margin-left: 2000px;}
+	100% {opacity: 1; margin-left: -500px;}
+}
+
+.exitSlide {
+	animation-name: exitSlide;
+	animation-duration: 2s;
+	opacity: 0;
+	margin-left: -9999px;
+}
+@keyframes exitSlide {
+	0% {opacity: 1; margin-left: -500px;}
+	100% {opacity: 0; margin-left: -2000px;}
+}
+.enterBackground {
+	animation-name: enterBackground;
+	animation-duration: 2s;
+	opacity: 1;
+}
+@keyframes enterBackground {
+	0% {opacity: 0;}
+	100% {opacity: 1;}
+}
+.exitBackground {
+	animation-name: exitBackground;
+	animation-duration: 2s;
+	opacity: 0;
+	animation-fill-mode: forwards;
+	-webkit-animation-fill-mode: forwards;
+}
+@keyframes exitBackground {
+	0% {opacity: 1; margin-left: 0;}
+	99% {opacity: 0; margin-left: 0;}
+	100% {opacity: 0; margin-left: -9999px;}
+}
